@@ -32,7 +32,11 @@ import Main from './Layout/Main';
 import Home from './Components/Home';
 import Login from './Components/Login';
 import Register from './Components/Register';
+import AuthProviders from './AuthProviders/AuthProviders';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <RouterProvider router={router}></RouterProvider>
+  <AuthProviders>
+    <RouterProvider router={router}></RouterProvider>
+  </AuthProviders>
+  
 )
